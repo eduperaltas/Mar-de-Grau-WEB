@@ -539,6 +539,7 @@ class _Categoria_cardsState extends State<Categoria_cards> {
 
   @override
   Widget build(BuildContext context) {
+      print("cat"+ widget.catid);
     return StreamBuilder(
       stream: CloudFirestoreAPI(cat: widget.catid).platosdata,
         builder:(context, snapshot){

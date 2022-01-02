@@ -207,7 +207,7 @@ class CloudFirestoreAPI {
               Pdescription: doc['descripcion'],
               Pname: doc['nombre'],
               Pphoto: doc['foto'],
-              Pprice: doc['precio'],
+              Pprice: double.parse(doc['precio']),
               Pid: doc['idprod'],
               Pcategoria: doc['categoria']
           );
